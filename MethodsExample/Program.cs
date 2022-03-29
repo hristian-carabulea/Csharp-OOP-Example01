@@ -1,5 +1,5 @@
 ﻿/// <summary>
-/// Object Oriented Programming: Encapsulation, Abstraction, Set, Get, this, instance & static methods, reference variables as arguments.
+/// Object Oriented Programming: Encapsulation, Abstraction, Set, Get, this, instance and static methods, reference variables as arguments.
 /// </summary>
 class Program
 {
