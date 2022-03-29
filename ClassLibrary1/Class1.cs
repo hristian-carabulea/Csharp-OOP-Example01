@@ -110,7 +110,7 @@ public class Product
     public void CalculateTax(double percentage=4.5)
     {
         double tax; // local variable
-        System.Console.WriteLine("\nTax percentage: " + percentage);
+        //System.Console.WriteLine("\nTax percentage: " + percentage);
         if (productCost <= 2000)
         {
             tax = productCost * 10 / 100;
