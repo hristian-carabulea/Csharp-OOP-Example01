@@ -44,7 +44,7 @@ class Program
 
         product2.SetProductID(1002);
         product2.SetProductName("Laptop");
-        product2.SetProductCost(20001);
+        product2.SetProductCost(2001);
         product2.SetQuantityInStock(1300);
 
         //product3.productID = 1003;
@@ -54,13 +54,14 @@ class Program
 
         product3.SetProductID(1003);
         product3.SetProductName("Speakers");
-        product3.SetProductCost(100);
+        product3.SetProductCost(3001);
         product3.SetQuantityInStock(2600);
 
 
         product1.CalculateTax(9.2);
-        product2.CalculateTax();
-        product3.CalculateTax(15.2);
+        product2.CalculateTax(); //default parameter used - see method in class
+        //product3.CalculateTax(15.2);
+        product3.CalculateTax(percentage:15.2); // using named arguments
 
         //print values
         //System.Console.WriteLine("Product ID: " + product1.productID);
@@ -85,7 +86,7 @@ class Program
         //System.Console.WriteLine("Product tax: " + product3.productTax);
 
         // using gets instead of accessing the fields themselves.
-        System.Console.WriteLine("Product ID: " + product1.GetProductID());
+        System.Console.WriteLine("\nProduct ID: " + product1.GetProductID());
         System.Console.WriteLine("Product Name: " + product1.GetProductName());
         System.Console.WriteLine("Product Cost: " + product1.GetProductCost());
         System.Console.WriteLine("Product Quantity in Stock: " + product1.GetQuantityInStock());

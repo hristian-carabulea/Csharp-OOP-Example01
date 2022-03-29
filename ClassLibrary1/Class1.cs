@@ -109,19 +109,38 @@ public class Product
     /// <param name="percentage"></param>
     public void CalculateTax(double percentage=4.5)
     {
-        double t; // local variable
-
-        if (productCost <= 20000)
+        double tax; // local variable
+        System.Console.WriteLine("\nTax percentage: " + percentage);
+        if (productCost <= 2000)
         {
-            t = productCost * 10 / 1000;
+            tax = productCost * 10 / 100;
         }
         else
         {
-            t = productCost * percentage / 1000;
+            tax = productCost * percentage / 100;
         }
-        productTax = t;
+        productTax = tax;
     }
 
+    /// <summary>
+    /// Method overloading. This method version takes two arguments.
+    /// </summary>
+    /// <param name="cost"></param>
+    /// <param name="percentage"></param>
+    public void CalculateTax(double productCost, double percentage)
+    {
+        double tax; // local variable
+
+        if (productCost <= 2000)
+        {
+            tax = productCost * 10 / 100;
+        }
+        else
+        {
+            tax = productCost * percentage / 100;
+        }
+        productTax = tax;
+    }
     /// <summary>
     /// Set the stock quantity. Takes int parameter.
     /// </summary>
