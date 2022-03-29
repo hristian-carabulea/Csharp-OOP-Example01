@@ -10,7 +10,7 @@ public class Product
     //public int quantityInStock;
     //public readonly string dateOfPurchase;
 
-    // applying abstraction: make fields private & access them only through setters and getters
+    // applying abstraction: make fields private and access them only through setters and getters
     private int productID;
     private string productName;
     private double productCost;
